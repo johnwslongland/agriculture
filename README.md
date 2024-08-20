@@ -2,7 +2,7 @@
 
 The Agriculture Domain of ERPNext comes with features to record crops and land, track plant, soil, water, weather analytics, and even track diseases and fertilizers. You can check out the following topics after this brief introduction to the agriculture module in ERPNext.
 
-Enhancements made:
+Enhancements made:  
 Location doctype : User can enter shapes using coordinates. Provision made to have a special 'location' called : weather station.  
 Location doctype : User can collaborate parent and child locations in one view.  
 Weather doctype : Automatially upload data from certain weather networks.   
@@ -12,9 +12,10 @@ Disease : add fields : Crop disease , Animal Disease
 Agricultural Analysis Criteria : Add 'Feed' to drop-down  
 
 New doctypes  :   
-Animal. Linked to Item; Contains fields : Serial No, Species, Weight, Date PUrchased, PO, Date Sold , SO , Project , Feed , Pedigree  
+Herd : name, location, project, Feed, child-table : list all 'Animals' ;  
+Animal. Linked to Item; Contains fields : Serial No, Species, Weight, Date PUrchased, PO, Date Sold , SO , Pedigree  
         Disease child table  
-Animal Location Rotation: Child table : Location, Current  
+Animal Location Rotation: Child table : Location, Current (in 'Herd' )  
 Feed : name , Composition  
 Species. Name , scientific name  
 Pedigree : Fields TBA
