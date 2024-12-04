@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 11:00:37.344575",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "animal",
+  "web_tab",
+  "animal_identification_number",
+  "herd_book",
+  "url",
+  "pedigree_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-PED-.YYYY.-"
+  },
+  {
+   "fieldname": "animal",
+   "fieldtype": "Link",
+   "label": "Animal",
+   "options": "Animal"
+  },
+  {
+   "fieldname": "web_tab",
+   "fieldtype": "Tab Break",
+   "label": "Web"
+  },
+  {
+   "fieldname": "animal_identification_number",
+   "fieldtype": "Data",
+   "label": "Animal Identification Number"
+  },
+  {
+   "fieldname": "herd_book",
+   "fieldtype": "Data",
+   "label": "Herd Book"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "fieldname": "pedigree_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pedigree"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 09:06:24.684933",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Pedigree",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

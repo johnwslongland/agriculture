@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 11:09:12.157774",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pasture",
+  "pasture_location",
+  "pasture_species",
+  "column_break_jzqy",
+  "size_m2",
+  "size_ac",
+  "size_ha",
+  "utilization_factor",
+  "section_break_tgay",
+  "herd",
+  "column_break_dgyo",
+  "total_herd_au",
+  "section_break_ywpi",
+  "from_date",
+  "to_date",
+  "selected_period",
+  "column_break_qyji",
+  "acau",
+  "allowed_au",
+  "rest_period"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-HRT-.YYYY.-"
+  },
+  {
+   "fieldname": "pasture",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pasture",
+   "options": "Pasture"
+  },
+  {
+   "fieldname": "pasture_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pasture Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "pasture_species",
+   "fieldtype": "Link",
+   "label": "Pasture Species",
+   "options": "Pasture Species"
+  },
+  {
+   "fieldname": "column_break_jzqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size_m2",
+   "fieldtype": "Float",
+   "label": "Size m2"
+  },
+  {
+   "fieldname": "size_ac",
+   "fieldtype": "Float",
+   "label": "Size AC"
+  },
+  {
+   "fieldname": "size_ha",
+   "fieldtype": "Float",
+   "label": "Size Ha"
+  },
+  {
+   "fieldname": "utilization_factor",
+   "fieldtype": "Float",
+   "label": "Utilization Factor"
+  },
+  {
+   "fieldname": "section_break_tgay",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "herd",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Herd",
+   "options": "Herd"
+  },
+  {
+   "fieldname": "column_break_dgyo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_herd_au",
+   "fieldtype": "Float",
+   "label": "Total Herd AU"
+  },
+  {
+   "fieldname": "section_break_ywpi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "selected_period",
+   "fieldtype": "Data",
+   "label": "Selected Period"
+  },
+  {
+   "fieldname": "column_break_qyji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acau",
+   "fieldtype": "Float",
+   "label": "AC/AU"
+  },
+  {
+   "fieldname": "allowed_au",
+   "fieldtype": "Float",
+   "label": "Allowed AU"
+  },
+  {
+   "fieldname": "rest_period",
+   "fieldtype": "Float",
+   "label": "Rest Period"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 09:05:46.589131",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Herd Pasture Rotation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

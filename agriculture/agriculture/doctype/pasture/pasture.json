@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 11:05:50.930826",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "pasture_species",
+  "size_m2",
+  "size_ac",
+  "size_ha",
+  "column_break_mufk",
+  "naming_series",
+  "location",
+  "utilization_factor",
+  "monthly_values_tab",
+  "monthly",
+  "tab_3_tab",
+  "pasture_projects",
+  "section_break_tcwn",
+  "image",
+  "section_break_xtzz",
+  "location_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "pasture_species",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pasture Species",
+   "options": "Pasture Species"
+  },
+  {
+   "fieldname": "size_m2",
+   "fieldtype": "Float",
+   "label": "Size M2"
+  },
+  {
+   "fieldname": "size_ac",
+   "fieldtype": "Float",
+   "label": "Size AC"
+  },
+  {
+   "fieldname": "size_ha",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Size Ha"
+  },
+  {
+   "fieldname": "column_break_mufk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-PAS-.YYYY.-"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "utilization_factor",
+   "fieldtype": "Percent",
+   "label": "Utilization Factor (%)"
+  },
+  {
+   "fieldname": "monthly_values_tab",
+   "fieldtype": "Tab Break",
+   "label": "Monthly Values"
+  },
+  {
+   "fieldname": "monthly",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Monthly",
+   "options": "Pasture Species Monthly"
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "pasture_projects",
+   "fieldtype": "Table",
+   "label": "Pasture Projects",
+   "options": "Agriculture Project"
+  },
+  {
+   "fieldname": "section_break_tcwn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "section_break_xtzz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location_image",
+   "fieldtype": "Image",
+   "label": "Location Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 09:06:05.970516",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Pasture",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

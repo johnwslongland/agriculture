@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 11:02:31.687936",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_section",
+  "name1",
+  "column_break_qklf",
+  "naming_series",
+  "total_animal_units",
+  "management_tab",
+  "herd_projects"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_information_section",
+   "fieldtype": "Section Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_qklf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-HRD-.YYYY.-"
+  },
+  {
+   "fieldname": "total_animal_units",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Animal Units"
+  },
+  {
+   "fieldname": "management_tab",
+   "fieldtype": "Tab Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "herd_projects",
+   "fieldtype": "Table",
+   "label": "Herd Projects",
+   "options": "Agriculture Project"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Animals",
+   "link_doctype": "Animal",
+   "link_fieldname": "herd"
+  },
+  {
+   "group": "Rotations",
+   "link_doctype": "Herd Pasture Rotation",
+   "link_fieldname": "herd"
+  },
+  {
+   "group": "Rotations",
+   "link_doctype": "Animal Herd Rotation",
+   "link_fieldname": "existing_herd"
+  }
+ ],
+ "modified": "2024-12-04 09:05:55.483956",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Herd",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
