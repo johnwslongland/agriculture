@@ -1,13 +1,15 @@
 {
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Reports & Masters\", \"level\": 4, \"col\": 12}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Crops & Lands\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Analytics\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Diseases & Fertilizers\", \"col\": 4}}]",
+ "content": "[{\"id\":\"TBxNEMBUjl\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Reports &amp; Masters</span>\",\"col\":12}},{\"id\":\"Bfz4Iog624\",\"type\":\"card\",\"data\":{\"card_name\":\"Crops & Lands\",\"col\":4}},{\"id\":\"aJjiiwWnT5\",\"type\":\"card\",\"data\":{\"card_name\":\"Analytics\",\"col\":4}},{\"id\":\"HIR--xvNIj\",\"type\":\"card\",\"data\":{\"card_name\":\"Diseases & Fertilizers\",\"col\":4}},{\"id\":\"b_w55gfSKz\",\"type\":\"card\",\"data\":{\"card_name\":\"Animals\",\"col\":4}},{\"id\":\"dsgu0SPsky\",\"type\":\"card\",\"data\":{\"card_name\":\"Pasture\",\"col\":4}},{\"id\":\"lM9XQjxEi5\",\"type\":\"card\",\"data\":{\"card_name\":\"Management\",\"col\":4}}]",
  "creation": "2020-03-02 17:23:34.339274",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "icon": "agriculture",
  "idx": 0,
+ "is_hidden": 0,
  "label": "Agriculture",
  "links": [
   {
@@ -54,8 +56,176 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Analytics",
+   "label": "Diseases & Fertilizers",
    "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Disease",
+   "link_count": 0,
+   "link_to": "Disease",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fertilizer",
+   "link_count": 0,
+   "link_to": "Fertilizer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Animals",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Animal",
+   "link_count": 0,
+   "link_to": "Animal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Herd",
+   "link_count": 0,
+   "link_to": "Herd",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Herd Sub Group",
+   "link_count": 0,
+   "link_to": "Herd Sub Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Breed Options",
+   "link_count": 0,
+   "link_to": "Breed Options",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pedigree",
+   "link_count": 0,
+   "link_to": "Pedigree",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pasture",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pasture",
+   "link_count": 0,
+   "link_to": "Pasture",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pasture Species",
+   "link_count": 0,
+   "link_to": "Pasture Species",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Management",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Herd Pasture Rotation",
+   "link_count": 0,
+   "link_to": "Herd Pasture Rotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Animal Herd Rotation",
+   "link_count": 0,
+   "link_to": "Animal Herd Rotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Animal Gestation",
+   "link_count": 0,
+   "link_to": "Animal Gestation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Animal Control",
+   "link_count": 0,
+   "link_to": "Animal Control",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Analytics",
+   "link_count": 8,
+   "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
   },
@@ -82,10 +252,9 @@
    "type": "Link"
   },
   {
-   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Water Analysis",
+   "label": "water Analysis",
    "link_count": 0,
    "link_to": "Water Analysis",
    "link_type": "DocType",
@@ -115,6 +284,16 @@
    "type": "Link"
   },
   {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Animal Analysis",
+   "link_count": 0,
+   "link_to": "Animal Analysis",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
@@ -128,44 +307,26 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Diseases & Fertilizers",
+   "label": "Pest Analysis",
    "link_count": 0,
+   "link_to": "Pest Analysis",
+   "link_type": "DocType",
    "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Disease",
-   "link_count": 0,
-   "link_to": "Disease",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Fertilizer",
-   "link_count": 0,
-   "link_to": "Fertilizer",
-   "link_type": "DocType",
-   "onboard": 1,
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:15:54.595198",
+ "modified": "2024-11-27 21:11:54.615197",
  "modified_by": "Administrator",
  "module": "Agriculture",
  "name": "Agriculture",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
+ "quick_lists": [],
  "restrict_to_domain": "Agriculture",
  "roles": [],
- "sequence_id": 3,
+ "sequence_id": 3.0,
  "shortcuts": [],
  "title": "Agriculture"
 }

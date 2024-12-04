@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 20:26:03.808944",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "animal",
+  "column_break_tdqo",
+  "collection_datetime",
+  "laboratory_testing_datetime",
+  "result_datetime",
+  "invoice",
+  "section_break_ijpn",
+  "responsible_person",
+  "section_break_kshn",
+  "animal_analysis_criteria"
+ ],
+ "fields": [
+  {
+   "fieldname": "animal",
+   "fieldtype": "Link",
+   "label": "Animal",
+   "options": "Animal"
+  },
+  {
+   "fieldname": "column_break_tdqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "collection_datetime",
+   "fieldtype": "Datetime",
+   "label": "Collection Datetime"
+  },
+  {
+   "fieldname": "laboratory_testing_datetime",
+   "fieldtype": "Datetime",
+   "label": "Laboratory Testing Datetime"
+  },
+  {
+   "fieldname": "result_datetime",
+   "fieldtype": "Datetime",
+   "label": "Result Datetime"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Link",
+   "label": "Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "section_break_kshn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "animal_analysis_criteria",
+   "fieldtype": "Table",
+   "label": "Animal Analysis Criteria",
+   "options": "Animal Analysis Criteria"
+  },
+  {
+   "fieldname": "section_break_ijpn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-28 10:03:34.294781",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Animal Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

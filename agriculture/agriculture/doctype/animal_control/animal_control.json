@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 11:12:12.688437",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "naming_series",
+  "control_type",
+  "supporting_documents_section",
+  "purchase_receipt",
+  "purchase_invoice",
+  "stock_entry",
+  "sales_invoice",
+  "delivery_note",
+  "section_break_qwnc",
+  "scan_animal_serial_no_barcode",
+  "animal_control_items"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-CTR-.YYYY.-"
+  },
+  {
+   "fieldname": "control_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Control Type",
+   "options": "None\nPurchase\nSale\nBirth\nDeath\nCulling\nLoan\nLoan Return"
+  },
+  {
+   "fieldname": "supporting_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Supporting Documents"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Purchase\"",
+   "fieldname": "purchase_receipt",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purchase Receipt",
+   "options": "Purchase Receipt"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Purchase\"",
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Birth\" || doc.control_type == \"Death\" || doc.control_type == \"Culling\" || doc.control_type == \"Sale\" || doc.control_type == \"Loan\" || doc.control_type == \"Loan Return\"",
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stock Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Sale\"",
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "section_break_qwnc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Birth\" || doc.control_type == \"Death\" || doc.control_type == \"Culling\" || doc.control_type == \"Sale\" || doc.control_type == \"Loan\" || doc.control_type == \"Loan Return\"",
+   "fieldname": "scan_animal_serial_no_barcode",
+   "fieldtype": "Data",
+   "label": "Scan Animal Serial No Barcode"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Birth\" || doc.control_type == \"Death\" || doc.control_type == \"Culling\" || doc.control_type == \"Sale\" || doc.control_type == \"Loan\" || doc.control_type == \"Loan Return\"",
+   "fieldname": "animal_control_items",
+   "fieldtype": "Table",
+   "label": "Animal Control Items",
+   "options": "Animal Control Items"
+  },
+  {
+   "depends_on": "eval: doc.control_type == \"Sale\"",
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dellivery Note",
+   "options": "Delivery Note"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-03 19:32:55.229865",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Animal Control",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

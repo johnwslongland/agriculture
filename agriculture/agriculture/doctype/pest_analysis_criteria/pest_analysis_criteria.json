@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 21:03:40.663947",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "value",
+  "minimum_permissible_value",
+  "maximum_permissible_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Title",
+   "options": "Agriculture Analysis Criteria"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value"
+  },
+  {
+   "fieldname": "minimum_permissible_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Minimum Permissible Value"
+  },
+  {
+   "fieldname": "maximum_permissible_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Maximum Permissible Value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-28 10:06:29.182211",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Pest Analysis Criteria",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

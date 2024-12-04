@@ -1,0 +1,252 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 10:45:02.135960",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "identification_tab",
+  "name1",
+  "naming_series",
+  "status",
+  "herd",
+  "herd_sub_group",
+  "column_break_xcdv",
+  "item_code",
+  "item_group",
+  "serial_no",
+  "animal_barcode",
+  "breed_information_tab",
+  "gender",
+  "breed",
+  "pedigree",
+  "commercial_information_tab",
+  "date_purchased",
+  "purchase_invoice",
+  "column_break_bkpe",
+  "date_sold",
+  "sales_invoice",
+  "management_tab",
+  "section_break_lklq",
+  "animal_units",
+  "section_break_bph5",
+  "animal_projects",
+  "additional_information_tab",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "identification_tab",
+   "fieldtype": "Tab Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-AN-.YYYY.-"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "herd",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Herd",
+   "options": "Herd"
+  },
+  {
+   "fieldname": "herd_sub_group",
+   "fieldtype": "Link",
+   "label": "Herd Sub Group",
+   "options": "Herd Sub Group"
+  },
+  {
+   "fieldname": "column_break_xcdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "animal_barcode",
+   "fieldtype": "Barcode",
+   "label": "Animal Barcode"
+  },
+  {
+   "fieldname": "breed_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Breed Information"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "breed",
+   "fieldtype": "Link",
+   "label": "Breed",
+   "options": "Breed Options"
+  },
+  {
+   "fieldname": "pedigree",
+   "fieldtype": "Link",
+   "label": "Pedigree",
+   "options": "Pedigree"
+  },
+  {
+   "fieldname": "commercial_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Commercial Information"
+  },
+  {
+   "fieldname": "date_purchased",
+   "fieldtype": "Date",
+   "label": "Date Purchased"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "column_break_bkpe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_sold",
+   "fieldtype": "Date",
+   "label": "Date Sold"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Data",
+   "label": "Sales Invoice"
+  },
+  {
+   "fieldname": "management_tab",
+   "fieldtype": "Tab Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "section_break_lklq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "animal_units",
+   "fieldtype": "Float",
+   "label": "Animal Units"
+  },
+  {
+   "fieldname": "section_break_bph5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "animal_projects",
+   "fieldtype": "Table",
+   "label": "Animal Projects",
+   "options": "Agriculture Project"
+  },
+  {
+   "fieldname": "additional_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Animal Analysis",
+   "link_doctype": "Animal Analysis",
+   "link_fieldname": "animal"
+  }
+ ],
+ "modified": "2024-12-02 13:40:19.114241",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Animal",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

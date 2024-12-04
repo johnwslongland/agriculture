@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-27 21:06:35.145709",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "location_section",
+  "location",
+  "column_break_himh",
+  "location_selection",
+  "collection_datetime",
+  "purchase_invoice",
+  "section_break_ybmi",
+  "responsible_person",
+  "pest_analysis_criteria_section",
+  "table_qqcj"
+ ],
+ "fields": [
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_himh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location_selection",
+   "fieldtype": "Link",
+   "label": "Location Selection",
+   "options": "Location"
+  },
+  {
+   "fieldname": "collection_datetime",
+   "fieldtype": "Datetime",
+   "label": "Collection Datetime"
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "section_break_ybmi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "label": "Responsible Person",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "pest_analysis_criteria_section",
+   "fieldtype": "Section Break",
+   "label": "Pest Analysis Criteria"
+  },
+  {
+   "fieldname": "table_qqcj",
+   "fieldtype": "Table",
+   "options": "Pest Analysis Criteria"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-28 10:05:21.406974",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Pest Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

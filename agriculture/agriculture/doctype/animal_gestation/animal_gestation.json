@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-27 11:11:32.180416",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "animal",
+  "herd",
+  "column_break_kjbq",
+  "animal_analysis",
+  "estimated_start_of_gestation",
+  "estimated_end_of_gestation",
+  "section_break_kfkp",
+  "bulls"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AGR-AGS-.YYYY.-"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "animal",
+   "fieldtype": "Link",
+   "label": "Animal",
+   "options": "Animal"
+  },
+  {
+   "fieldname": "herd",
+   "fieldtype": "Link",
+   "label": "Herd",
+   "options": "Herd"
+  },
+  {
+   "fieldname": "column_break_kjbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "animal_analysis",
+   "fieldtype": "Link",
+   "label": "Animal Analysis",
+   "options": "Animal Analysis"
+  },
+  {
+   "fieldname": "estimated_start_of_gestation",
+   "fieldtype": "Date",
+   "label": "Estimated Start of Gestation"
+  },
+  {
+   "fieldname": "estimated_end_of_gestation",
+   "fieldtype": "Date",
+   "label": "Estimated End of Gestation"
+  },
+  {
+   "fieldname": "section_break_kfkp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bulls",
+   "fieldtype": "Table",
+   "label": "Bulls",
+   "options": "Animal Gestation Bulls"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-02 13:40:53.591266",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Animal Gestation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

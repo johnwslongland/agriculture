@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-01 11:37:44.569370",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "acau",
+  "allowed_au",
+  "rest_period"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "acau",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "AC/AU"
+  },
+  {
+   "fieldname": "allowed_au",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Allowed AU"
+  },
+  {
+   "fieldname": "rest_period",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rest Period (Days)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-01 11:43:53.941299",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Pasture Species Monthly",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
