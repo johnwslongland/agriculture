@@ -11,14 +11,17 @@ Crop-cycle doctype : Linked location can be accessed via custom button in Linked
 Disease : add fields : Crop disease , Animal Disease  
 Agricultural Analysis Criteria : Add 'Feed' to drop-down  
 
-New doctypes  :   
-Herd : name, location, project, Feed, child-table : list all 'Animals' ;  
+New doctypes  :   ( Livestock )
+Herd : a Container for a set of Animals ;  
 Animal. Linked to Item; Contains fields : Serial No, Species, Weight, Date PUrchased, PO, Date Sold , SO , Pedigree  
-        Disease child table  
-Animal Location Rotation: Child table : Location, Current (in 'Herd' )  
-Feed : name , Composition  
-Species. Name , scientific name  
+Animal Herd Rotation : records the rotation of Animals between Herds
+Herd Pasture Rotation : records the rotation of Herds between Pastures
+Pasture : a Pieace of land ( Location ) that has a certain species, with a certain carying capacity, that can be used for grazing.
+Pasture Species : records the data ( carying capacity ) related to a certain species.
+Animal Analysis : Tests performed on an Animal
+Pest Analysis  : tests related to crop pests.
 Pedigree : Fields TBA
+a Document that abstracts the animal control from the ERPNext financial / stock complexities.
 
 Fixes :
 Wrong path  : line 30 crop.js  
